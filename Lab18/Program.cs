@@ -52,15 +52,15 @@ namespace Lab18
             string stackElementEnd1 = brackets1.Peek();
             string stackElementEnd2 = brackets2.Peek();
             string stackElementEnd3 = brackets3.Peek();
-            if (stackElementEnd1 ="{")
+            if (stackElementEnd1 == "{")
             {
                 Console.WriteLine("Не верно расставлены скобки");
             }
-            if (stackElementEnd2 = "[")
+            if (stackElementEnd2 == "[")
             {
                 Console.WriteLine("Не верно расставлены скобки");
             }
-            if (stackElementEnd3 = "(")
+            if (stackElementEnd3 == "(")
             {
                 Console.WriteLine("Не верно расставлены скобки");
             }
