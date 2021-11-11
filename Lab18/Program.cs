@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Lab18
 {
     class Program
@@ -24,7 +23,7 @@ namespace Lab18
             Stack<string> brackets3 = new Stack<string>();
             for (int i = 0; i < 8; i++)
             {
-                if (array[i] =="{")
+                if (array[i] == "{")
                 {
                     brackets1.Push(array[i]);
                 }
@@ -52,15 +51,15 @@ namespace Lab18
             string stackElementEnd1 = brackets1.Peek();
             string stackElementEnd2 = brackets2.Peek();
             string stackElementEnd3 = brackets3.Peek();
-            if (stackElementEnd1 ="{")
+            if (stackElementEnd1 == "{")
             {
                 Console.WriteLine("Не верно расставлены скобки");
             }
-            if (stackElementEnd2 = "[")
+            if (stackElementEnd2 == "[")
             {
                 Console.WriteLine("Не верно расставлены скобки");
             }
-            if (stackElementEnd3 = "(")
+            if (stackElementEnd3 == "(")
             {
                 Console.WriteLine("Не верно расставлены скобки");
             }
@@ -68,6 +67,7 @@ namespace Lab18
             {
                 Console.WriteLine("Верно расставлены скобки");
             }
+            Console.ReadKey();
         }
     }
 }
