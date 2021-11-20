@@ -48,24 +48,43 @@ namespace Lab18
                     string stackElement3 = brackets3.Pop(); ;
                 }
             }
-            string stackElementEnd1 = brackets1.Peek();
-            string stackElementEnd2 = brackets2.Peek();
-            string stackElementEnd3 = brackets3.Peek();
-            if (stackElementEnd1 == "{")
+            int a = 0;
+            int b = 0;
+            int c = 0;
+            try
             {
-                Console.WriteLine("Не верно расставлены скобки");
+                string stackElementEnd1 = brackets1.Peek();
             }
-            if (stackElementEnd2 == "[")
+            catch
             {
-                Console.WriteLine("Не верно расставлены скобки");
+                a = 1;
             }
-            if (stackElementEnd3 == "(")
+            try
             {
-                Console.WriteLine("Не верно расставлены скобки");
+                string stackElementEnd2 = brackets2.Peek();
             }
-            else
+            catch
             {
-                Console.WriteLine("Верно расставлены скобки");
+                b = 1;
+            }
+            try
+            {
+                string stackElementEnd3 = brackets3.Peek();
+            }
+            catch
+            {
+                c = 1;
+            }
+            finally
+            {
+                if ((a + b + c) != 3)
+                {
+                    Console.WriteLine("Не верно расставлены скобки");
+                }
+                else
+                {
+                    Console.WriteLine("Верно расставлены скобки");
+                }
             }
             Console.ReadKey();
         }
