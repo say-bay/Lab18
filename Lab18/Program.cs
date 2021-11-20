@@ -9,7 +9,7 @@ namespace Lab18
     {
         static void Main(string[] args)
         {
-            string[] array = new string[7];
+            string[] array = new string[8];
             array[0] = "(";
             array[1] = "[";
             array[2] = "]";
